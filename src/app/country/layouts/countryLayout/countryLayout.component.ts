@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-country-layout',
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
+  templateUrl: './countryLayout.component.html',
 })
-export class AppComponent {
-  title = 'worldapp';
-}
+export class CountryLayoutComponent {}
