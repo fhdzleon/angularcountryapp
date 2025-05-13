@@ -1,0 +1,14 @@
+<section class="flex p-5 flex-row gap-2">
+  <input
+    class="mr-2 input w-56"
+    type="text"
+    [placeholder]="customPlaceHolder()"
+    autofocus
+    #txtCountry
+    (keyup.enter)="value.emit(txtCountry.value)"
+  />
+
+  <button (click)="value.emit(txtCountry.value)" class="btn btn-primary">
+    Buscar
+  </button>
+</section>

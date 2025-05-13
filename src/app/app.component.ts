@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { AppFooterComponent } from './shared/components/appFooter/appFooter.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, AppFooterComponent],
   templateUrl: './app.component.html',
 })
 export class AppComponent {
