@@ -1,3 +1,6 @@
-<country-search-input customPlaceHolder="Buscar por capital" />
+<country-search-input
+  customPlaceHolder="Buscar por capital"
+  (value)="onSearch($event)"
+/>
 
 <country-list />

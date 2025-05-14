@@ -10,4 +10,12 @@ import { CountryService } from '../../services/country.service';
 })
 export class ByCapitalComponent {
   countryService = inject(CountryService);
+
+  onSearch(query: string) {
+    const response = this.countryService
+      .searchByCapital(query)
+      .subscribe((country) => {
+        console.log(country);
+      });
+  }
 }
